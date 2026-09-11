@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Life Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header id="greeting-widget" role="banner">
+    <p id="greeting-text"></p>
+    <p id="current-time"></p>
+    <p id="current-date"></p>
+  </header>
+
+  <main id="dashboard-grid">
+
+    <section id="focus-timer" class="card" aria-label="Focus Timer">
+      <h2>Focus Timer</h2>
+      <p id="timer-display" aria-live="polite">25:00</p>
+      <div class="timer-controls">
+        <button id="timer-start">Start</button>
+        <button id="timer-stop">Stop</button>
+        <button id="timer-reset">Reset</button>
+      </div>
+    </section>
+
+    <section id="todo-section" class="card" aria-label="To-Do List">
+      <h2>To-Do</h2>
+      <form id="todo-form">
+        <input id="todo-input" type="text" placeholder="Add a task…" autocomplete="off" />
+        <button type="submit">Add</button>
+      </form>
+      <ul id="todo-list" aria-label="Task list"></ul>
+    </section>
+
+    <section id="quick-links-section" class="card" aria-label="Quick Links">
+      <h2>Quick Links</h2>
+      <form id="quicklink-form">
+        <input id="ql-label-input" type="text" placeholder="Label" autocomplete="off" aria-describedby="ql-label-error" />
+        <span id="ql-label-error" class="field-error" role="alert" aria-live="polite"></span>
+        <input id="ql-url-input"   type="url"  placeholder="https://…" autocomplete="off" aria-describedby="ql-url-error" />
+        <span id="ql-url-error"   class="field-error" role="alert" aria-live="polite"></span>
+        <button type="submit">Add</button>
+      </form>
+      <div id="quick-links-panel" role="list"></div>
+    </section>
+
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

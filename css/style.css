@@ -1,0 +1,461 @@
+/* =========================================================
+ * 1. CSS CUSTOM PROPERTIES (Design Tokens)
+ * ======================================================= */
+
+:root {
+  /* Colour palette — all pairs meet WCAG 2.1 AA 4.5:1 contrast */
+  --color-bg:           #f5f5f5;
+  --color-surface:      #ffffff;
+  --color-text:         #1a1a1a;   /* 14.7:1 on --color-surface */
+  --color-text-muted:   #595959;   /*  7.0:1 on --color-surface */
+  --color-primary:      #1a56db;   /*  5.3:1 on --color-surface */
+  --color-danger:       #c0392b;   /*  5.0:1 on --color-surface */
+  --color-done:         #595959;   /*  7.0:1 on --color-surface */
+  --color-border:       #d1d5db;
+
+  /* Typography */
+  --font-family:        system-ui, -apple-system, sans-serif;
+  --font-size-base:     1rem;      /* ≥ 16px browser default → meets 14px minimum */
+  --font-size-sm:       0.875rem;  /* 14px */
+  --font-size-lg:       1.25rem;
+  --font-size-xl:       2rem;
+
+  /* Spacing */
+  --spacing-sm:         0.5rem;
+  --spacing-md:         1rem;
+  --spacing-lg:         1.5rem;   /* 24px — satisfies 16px section spacing requirement */
+  --spacing-xl:         2rem;
+
+  /* Borders & shadows */
+  --radius:             0.5rem;
+  --shadow:             0 1px 3px rgba(0,0,0,.12);
+}
+
+/* =========================================================
+ * 2. RESET / BASE
+ * ======================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, li,
+figure, figcaption,
+blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================================================
+ * 3. BODY BASE STYLES
+ * ======================================================= */
+
+body {
+  font-family:      var(--font-family);
+  font-size:        var(--font-size-base);
+  background-color: var(--color-bg);
+  color:            var(--color-text);
+  line-height:      1.5;
+}
+
+/* =========================================================
+ * 4. LAYOUT — Greeting widget and dashboard grid
+ * ======================================================= */
+
+/* Prevent horizontal overflow at any viewport width */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Greeting Widget — full-width top bar above the grid */
+#greeting-widget {
+  width: 100%;
+}
+
+/* Dashboard Grid — 2-column layout on wide viewports */
+#dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg);
+  max-width: 1100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Responsive breakpoint — single column on mobile */
+@media (max-width: 767px) {
+  #dashboard-grid {
+    grid-template-columns: 1fr;
+    padding: var(--spacing-md);
+  }
+}
+
+/* =========================================================
+ * 5. CARD BASE — shared surface style for all four widgets
+ * ======================================================= */
+
+.card {
+  background-color: var(--color-surface);
+  border-radius:    var(--radius);
+  box-shadow:       var(--shadow);
+  padding:          var(--spacing-md);
+}
+
+/* Section headings inside cards */
+.card h2 {
+  font-size:     var(--font-size-lg);
+  margin-bottom: var(--spacing-sm);
+  color:         var(--color-text);
+}
+
+/* =========================================================
+ * 6. GREETING WIDGET
+ * ======================================================= */
+
+#greeting-widget {
+  background-color: var(--color-surface);
+  border-radius:    var(--radius);
+  box-shadow:       var(--shadow);
+  text-align:       center;
+  margin-bottom:    var(--spacing-lg);
+  /* slightly more generous padding than the standard card */
+  padding:          var(--spacing-lg);
+}
+
+#greeting-text {
+  font-size:  var(--font-size-lg);
+  color:      var(--color-text-muted);
+  margin-bottom: var(--spacing-sm);
+}
+
+#current-time {
+  font-family: 'Courier New', Courier, monospace;
+  font-size:   var(--font-size-xl);
+  font-weight: 700;
+  color:       var(--color-text);
+  line-height: 1.1;
+}
+
+#current-date {
+  font-size: var(--font-size-sm);
+  color:     var(--color-text-muted);
+  margin-top: var(--spacing-sm);
+}
+
+/* =========================================================
+ * 7. FOCUS TIMER
+ * ======================================================= */
+
+#focus-timer {
+  display:        flex;
+  flex-direction: column;
+  align-items:    center;
+  gap:            var(--spacing-sm);
+}
+
+#timer-display {
+  font-family: 'Courier New', Courier, monospace;
+  font-size:   var(--font-size-xl);
+  font-weight: 700;
+  color:       var(--color-text);
+  letter-spacing: 0.05em;
+}
+
+.timer-controls {
+  display: flex;
+  gap:     var(--spacing-sm);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.timer-controls button {
+  padding:       var(--spacing-sm) var(--spacing-md);
+  border:        1px solid var(--color-border);
+  border-radius: var(--radius);
+  background:    var(--color-surface);
+  color:         var(--color-text);
+  font-size:     var(--font-size-base);
+  cursor:        pointer;
+  transition:    background-color 0.15s ease, opacity 0.15s ease;
+}
+
+.timer-controls button:hover:not([disabled]) {
+  background-color: var(--color-bg);
+}
+
+#timer-start[disabled] {
+  opacity:       0.5;
+  cursor:        not-allowed;
+}
+
+/* =========================================================
+ * 8. TO-DO LIST
+ * ======================================================= */
+
+/* Add-task form — inline flex layout */
+#todo-form {
+  display: flex;
+  gap:     var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+#todo-input {
+  flex:          1;
+  padding:       var(--spacing-sm) var(--spacing-md);
+  border:        1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size:     var(--font-size-base);
+  font-family:   var(--font-family);
+  color:         var(--color-text);
+  background:    var(--color-surface);
+}
+
+#todo-input:focus {
+  outline:       2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-color:  var(--color-primary);
+}
+
+#todo-form button {
+  padding:       var(--spacing-sm) var(--spacing-md);
+  border:        none;
+  border-radius: var(--radius);
+  background:    var(--color-primary);
+  color:         #fff;
+  font-size:     var(--font-size-base);
+  cursor:        pointer;
+  white-space:   nowrap;
+  transition:    background-color 0.15s ease;
+}
+
+#todo-form button:hover {
+  background-color: #1444b8;
+}
+
+/* Task list */
+#todo-list {
+  list-style: none;
+}
+
+/* Individual task row */
+.task-item {
+  display:       flex;
+  align-items:   center;
+  gap:           var(--spacing-sm);
+  padding:       var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+/* Checkbox */
+.task-item input[type="checkbox"] {
+  flex-shrink: 0;
+  width:   1.1rem;
+  height:  1.1rem;
+  cursor:  pointer;
+  accent-color: var(--color-primary);
+}
+
+/* Task text — takes remaining space */
+.task-text {
+  flex:      1;
+  font-size: var(--font-size-base);
+  color:     var(--color-text);
+  word-break: break-word;
+}
+
+/* Completed task */
+.task-item.done .task-text {
+  text-decoration: line-through;
+  color:           var(--color-done);
+}
+
+/* Edit mode — hide the static text, show the input */
+.edit-input {
+  display: none;
+}
+
+.task-item.editing .task-text {
+  display: none;
+}
+
+.task-item.editing .edit-input {
+  display:       block;
+  flex:          1;
+  padding:       var(--spacing-sm) var(--spacing-md);
+  border:        1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size:     var(--font-size-base);
+  font-family:   var(--font-family);
+  color:         var(--color-text);
+  background:    var(--color-surface);
+}
+
+.task-item.editing .edit-input:focus {
+  outline:       2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-color:  var(--color-primary);
+}
+
+/* Action buttons (edit / delete / save / cancel) */
+.task-item button {
+  flex-shrink: 0;
+  padding:     0.25rem 0.5rem;
+  border:      1px solid var(--color-border);
+  border-radius: var(--radius);
+  background:  var(--color-surface);
+  font-size:   var(--font-size-sm);
+  cursor:      pointer;
+  transition:  background-color 0.15s ease;
+}
+
+.task-item button:hover {
+  background-color: var(--color-bg);
+}
+
+.task-item .btn-delete {
+  color:        var(--color-danger);
+  border-color: var(--color-danger);
+}
+
+.task-item .btn-delete:hover {
+  background-color: var(--color-danger);
+  color:            #fff;
+}
+
+/* =========================================================
+ * 9. QUICK LINKS PANEL
+ * ======================================================= */
+
+/* Quick-link add form */
+#quicklink-form {
+  display:   flex;
+  gap:       var(--spacing-sm);
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-sm);
+}
+
+#ql-label-input,
+#ql-url-input {
+  flex:          1;
+  min-width:     6rem;
+  padding:       var(--spacing-sm) var(--spacing-md);
+  border:        1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size:     var(--font-size-base);
+  font-family:   var(--font-family);
+  color:         var(--color-text);
+  background:    var(--color-surface);
+}
+
+#ql-label-input:focus,
+#ql-url-input:focus {
+  outline:       2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-color:  var(--color-primary);
+}
+
+#ql-label-input[aria-invalid="true"],
+#ql-url-input[aria-invalid="true"] {
+  border-color: var(--color-danger);
+}
+
+#quicklink-form button[type="submit"] {
+  padding:       var(--spacing-sm) var(--spacing-md);
+  border:        none;
+  border-radius: var(--radius);
+  background:    var(--color-primary);
+  color:         #fff;
+  font-size:     var(--font-size-base);
+  cursor:        pointer;
+  white-space:   nowrap;
+  transition:    background-color 0.15s ease;
+}
+
+#quicklink-form button[type="submit"]:hover {
+  background-color: #1444b8;
+}
+
+/* Error message for invalid form fields */
+.ql-error,
+.field-error {
+  display:    block;
+  width:      100%;
+  font-size:  var(--font-size-sm);
+  color:      var(--color-danger);
+  min-height: 0;
+  margin-top: calc(var(--spacing-sm) * -0.5);
+}
+
+.field-error:empty {
+  display: none;
+}
+
+/* Links container — wrapping flex */
+#quick-links-panel {
+  display:    flex;
+  flex-wrap:  wrap;
+  gap:        var(--spacing-sm);
+  align-items: flex-start;
+}
+
+/* Wrapper for each link + its delete button */
+.quicklink-item {
+  position:    relative;
+  display:     inline-flex;
+  align-items: center;
+}
+
+/* Pill-shaped link button */
+.quicklink-btn {
+  background:    var(--color-primary);
+  color:         #fff;
+  border:        none;
+  border-radius: 999px;
+  padding:       var(--spacing-sm) var(--spacing-md);
+  font-size:     var(--font-size-sm);
+  font-family:   var(--font-family);
+  cursor:        pointer;
+  transition:    background-color 0.15s ease, opacity 0.15s ease;
+  max-width:     14rem;
+  overflow:      hidden;
+  text-overflow: ellipsis;
+  white-space:   nowrap;
+}
+
+.quicklink-btn:hover {
+  background-color: #1444b8;
+}
+
+/* Small circular delete button next to the pill */
+.quicklink-delete {
+  flex-shrink:   0;
+  margin-left:   0.25rem;
+  width:         1.4rem;
+  height:        1.4rem;
+  border:        none;
+  border-radius: 50%;
+  background:    var(--color-danger);
+  color:         #fff;
+  font-size:     0.7rem;
+  line-height:   1;
+  cursor:        pointer;
+  display:       flex;
+  align-items:   center;
+  justify-content: center;
+  transition:    opacity 0.15s ease;
+}
+
+.quicklink-delete:hover {
+  opacity: 0.8;
+}

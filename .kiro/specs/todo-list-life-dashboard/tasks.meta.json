@@ -1,0 +1,311 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Create the folder structure and `index.html`": [
+      {
+        "executionId": "0425b9b1-4512-4937-907f-6cb42171f3b1",
+        "chatSessionId": "sess_814af006-666e-4b65-91c3-8ceb485a390c",
+        "timestamp": 1789138843158
+      },
+      {
+        "executionId": "0425b9b1-4512-4937-907f-6cb42171f3b1",
+        "chatSessionId": "sess_814af006-666e-4b65-91c3-8ceb485a390c",
+        "timestamp": 1789138889807
+      }
+    ],
+    "1. Scaffold project structure and HTML skeleton": [
+      {
+        "executionId": "0425b9b1-4512-4937-907f-6cb42171f3b1",
+        "chatSessionId": "sess_814af006-666e-4b65-91c3-8ceb485a390c",
+        "timestamp": 1789138889987
+      }
+    ],
+    "2. CSS — Design tokens, reset, and base styles": [
+      {
+        "executionId": "9adf570b-c0ed-43fd-9539-196902fa37a4",
+        "chatSessionId": "sess_69b00c47-4511-412e-a32d-81c9f541ab32",
+        "timestamp": 1789138951217
+      },
+      {
+        "executionId": "9adf570b-c0ed-43fd-9539-196902fa37a4",
+        "chatSessionId": "sess_69b00c47-4511-412e-a32d-81c9f541ab32",
+        "timestamp": 1789139005352
+      }
+    ],
+    "2.1 Write CSS custom properties and base reset": [
+      {
+        "executionId": "9adf570b-c0ed-43fd-9539-196902fa37a4",
+        "chatSessionId": "sess_69b00c47-4511-412e-a32d-81c9f541ab32",
+        "timestamp": 1789138955614
+      },
+      {
+        "executionId": "9adf570b-c0ed-43fd-9539-196902fa37a4",
+        "chatSessionId": "sess_69b00c47-4511-412e-a32d-81c9f541ab32",
+        "timestamp": 1789139005141
+      }
+    ],
+    "3.1 Implement dashboard grid and responsive layout": [
+      {
+        "executionId": "aa76fc56-fdbf-4329-aa9d-743338ebebc3",
+        "chatSessionId": "sess_9ad46a8b-1822-4b85-99ce-4bd67862ddda",
+        "timestamp": 1789139077859
+      },
+      {
+        "executionId": "aa76fc56-fdbf-4329-aa9d-743338ebebc3",
+        "chatSessionId": "sess_9ad46a8b-1822-4b85-99ce-4bd67862ddda",
+        "timestamp": 1789142726622
+      }
+    ],
+    "3. CSS — Layout (grid and responsive breakpoint)": [
+      {
+        "executionId": "aa76fc56-fdbf-4329-aa9d-743338ebebc3",
+        "chatSessionId": "sess_9ad46a8b-1822-4b85-99ce-4bd67862ddda",
+        "timestamp": 1789142726820
+      }
+    ],
+    "4.3 Style the To-Do List": [
+      {
+        "executionId": "e71295bd-04d9-485a-955c-585c350b9bb4",
+        "chatSessionId": "sess_3ebd6bf3-8953-49f8-a622-851a66a80626",
+        "timestamp": 1789142782160
+      },
+      {
+        "executionId": "e71295bd-04d9-485a-955c-585c350b9bb4",
+        "chatSessionId": "sess_3ebd6bf3-8953-49f8-a622-851a66a80626",
+        "timestamp": 1789142879667
+      }
+    ],
+    "4.1 Style the Greeting Widget and shared card base": [
+      {
+        "executionId": "298c746f-99d8-4ca1-a9ff-746121337375",
+        "chatSessionId": "sess_6ec391cb-238e-4680-a32c-9209699fb5aa",
+        "timestamp": 1789142894959
+      },
+      {
+        "executionId": "298c746f-99d8-4ca1-a9ff-746121337375",
+        "chatSessionId": "sess_6ec391cb-238e-4680-a32c-9209699fb5aa",
+        "timestamp": 1789142974013
+      }
+    ],
+    "4.2 Style the Focus Timer": [
+      {
+        "executionId": "14214599-473f-4faa-8382-52fded7c8035",
+        "chatSessionId": "sess_b5063e4b-d1fa-4586-80fd-ea2f19c3339f",
+        "timestamp": 1789143009328
+      }
+    ],
+    "4.4 Style the Quick Links Panel": [
+      {
+        "executionId": "67f29b44-44f2-49fb-a53d-b1d7ae7ad0f3",
+        "chatSessionId": "sess_1f3428f3-ad23-4c98-a0aa-29c349f15adf",
+        "timestamp": 1789143038274
+      },
+      {
+        "executionId": "67f29b44-44f2-49fb-a53d-b1d7ae7ad0f3",
+        "chatSessionId": "sess_1f3428f3-ad23-4c98-a0aa-29c349f15adf",
+        "timestamp": 1789143098982
+      }
+    ],
+    "4. CSS — Component styles": [
+      {
+        "executionId": "67f29b44-44f2-49fb-a53d-b1d7ae7ad0f3",
+        "chatSessionId": "sess_1f3428f3-ad23-4c98-a0aa-29c349f15adf",
+        "timestamp": 1789143099180
+      }
+    ],
+    "5.1 Write constants and initial state objects": [
+      {
+        "executionId": "90e61c63-52bf-4220-bc70-ca6ea59f2009",
+        "chatSessionId": "sess_01f57d06-bd45-4e9e-9e65-78d8415c56d7",
+        "timestamp": 1789143133066
+      },
+      {
+        "executionId": "90e61c63-52bf-4220-bc70-ca6ea59f2009",
+        "chatSessionId": "sess_01f57d06-bd45-4e9e-9e65-78d8415c56d7",
+        "timestamp": 1789143175011
+      }
+    ],
+    "5. JS — Constants and State (Section 1 & 2 of IIFE)": [
+      {
+        "executionId": "90e61c63-52bf-4220-bc70-ca6ea59f2009",
+        "chatSessionId": "sess_01f57d06-bd45-4e9e-9e65-78d8415c56d7",
+        "timestamp": 1789143175188
+      }
+    ],
+    "6.1 Implement load/save functions with error handling": [
+      {
+        "executionId": "0ee6b8c3-9cb3-4234-839d-af6cdf085eca",
+        "chatSessionId": "sess_50616665-7acd-43b6-a60e-2fbd9dcc4f9e",
+        "timestamp": 1789143240125
+      },
+      {
+        "executionId": "0ee6b8c3-9cb3-4234-839d-af6cdf085eca",
+        "chatSessionId": "sess_50616665-7acd-43b6-a60e-2fbd9dcc4f9e",
+        "timestamp": 1789143281553
+      }
+    ],
+    "6. JS — Storage module (Section 3 of IIFE)": [
+      {
+        "executionId": "0ee6b8c3-9cb3-4234-839d-af6cdf085eca",
+        "chatSessionId": "sess_50616665-7acd-43b6-a60e-2fbd9dcc4f9e",
+        "timestamp": 1789143281692
+      }
+    ],
+    "7.1 Implement greeting, time, and date functions": [
+      {
+        "executionId": "709af482-d20c-4d9e-8b73-47783abfd86f",
+        "chatSessionId": "sess_2bebd617-02a4-432e-86c7-20b995f0179f",
+        "timestamp": 1789143303904
+      },
+      {
+        "executionId": "709af482-d20c-4d9e-8b73-47783abfd86f",
+        "chatSessionId": "sess_2bebd617-02a4-432e-86c7-20b995f0179f",
+        "timestamp": 1789143315638
+      }
+    ],
+    "7. JS — Greeting Widget (Section 4 of IIFE)": [
+      {
+        "executionId": "da02252c-e99a-4086-9740-9a3159dc3cad",
+        "chatSessionId": "sess_47547c89-c3b7-4877-8e13-acdf8067c8ad",
+        "timestamp": 1789143354765
+      },
+      {
+        "executionId": "da02252c-e99a-4086-9740-9a3159dc3cad",
+        "chatSessionId": "sess_47547c89-c3b7-4877-8e13-acdf8067c8ad",
+        "timestamp": 1789147003295
+      }
+    ],
+    "8. JS — Focus Timer (Section 5 of IIFE)": [
+      {
+        "executionId": "4fddbfce-c5aa-4264-9b83-59ad61c28e0d",
+        "chatSessionId": "sess_803fe426-2ebd-4c77-a503-b6baec7276d4",
+        "timestamp": 1789147088964
+      },
+      {
+        "executionId": "4fddbfce-c5aa-4264-9b83-59ad61c28e0d",
+        "chatSessionId": "sess_803fe426-2ebd-4c77-a503-b6baec7276d4",
+        "timestamp": 1789147141529
+      }
+    ],
+    "10. JS — To-Do List (Section 6 of IIFE)": [
+      {
+        "executionId": "b33d949a-08cf-431e-91fb-73684a8cb41d",
+        "chatSessionId": "sess_8f5b7533-4267-48f4-96fe-f0c15f81087a",
+        "timestamp": 1789147198910
+      },
+      {
+        "executionId": "bfb09804-89ff-4b94-851e-bbb0d8c95d8b",
+        "chatSessionId": "sess_5fdc660a-0bbd-4dac-8eac-a666638388f1",
+        "timestamp": 1789156221584
+      }
+    ],
+    "10.1 Implement task CRUD functions": [
+      {
+        "executionId": "b33d949a-08cf-431e-91fb-73684a8cb41d",
+        "chatSessionId": "sess_8f5b7533-4267-48f4-96fe-f0c15f81087a",
+        "timestamp": 1789147202767
+      },
+      {
+        "executionId": "68b22632-ebd7-4720-a98c-c738df80761c",
+        "chatSessionId": "sess_bf2450a7-a930-418a-ac32-29d912a4cb9c",
+        "timestamp": 1789156115108
+      },
+      {
+        "executionId": "68b22632-ebd7-4720-a98c-c738df80761c",
+        "chatSessionId": "sess_bf2450a7-a930-418a-ac32-29d912a4cb9c",
+        "timestamp": 1789156153359
+      }
+    ],
+    "10.2 Implement `renderTasks()`": [
+      {
+        "executionId": "b33d949a-08cf-431e-91fb-73684a8cb41d",
+        "chatSessionId": "sess_8f5b7533-4267-48f4-96fe-f0c15f81087a",
+        "timestamp": 1789147206721
+      },
+      {
+        "executionId": "bfb09804-89ff-4b94-851e-bbb0d8c95d8b",
+        "chatSessionId": "sess_5fdc660a-0bbd-4dac-8eac-a666638388f1",
+        "timestamp": 1789156180214
+      },
+      {
+        "executionId": "bfb09804-89ff-4b94-851e-bbb0d8c95d8b",
+        "chatSessionId": "sess_5fdc660a-0bbd-4dac-8eac-a666638388f1",
+        "timestamp": 1789156221386
+      }
+    ],
+    "11.1 Implement Quick Link CRUD functions": [
+      {
+        "executionId": "ec516c90-d3d8-4716-b104-a79fa8954354",
+        "chatSessionId": "sess_ed6680fc-77d4-42ee-aab2-0676fe266600",
+        "timestamp": 1789156250295
+      },
+      {
+        "executionId": "ec516c90-d3d8-4716-b104-a79fa8954354",
+        "chatSessionId": "sess_ed6680fc-77d4-42ee-aab2-0676fe266600",
+        "timestamp": 1789156307679
+      }
+    ],
+    "11.2 Implement `renderQuickLinks()`": [
+      {
+        "executionId": "ec516c90-d3d8-4716-b104-a79fa8954354",
+        "chatSessionId": "sess_ed6680fc-77d4-42ee-aab2-0676fe266600",
+        "timestamp": 1789156250659
+      },
+      {
+        "executionId": "ec516c90-d3d8-4716-b104-a79fa8954354",
+        "chatSessionId": "sess_ed6680fc-77d4-42ee-aab2-0676fe266600",
+        "timestamp": 1789156307838
+      }
+    ],
+    "11. JS — Quick Links (Section 7 of IIFE)": [
+      {
+        "executionId": "ec516c90-d3d8-4716-b104-a79fa8954354",
+        "chatSessionId": "sess_ed6680fc-77d4-42ee-aab2-0676fe266600",
+        "timestamp": 1789156307966
+      }
+    ],
+    "12. JS — Init (Section 8 of IIFE)": [
+      {
+        "executionId": "340f0c51-50f3-4f06-8556-0c9625d31b3b",
+        "chatSessionId": "sess_0a24c9c9-f7fd-4cf6-a502-9fd65b1c01c5",
+        "timestamp": 1789156369229
+      },
+      {
+        "executionId": "340f0c51-50f3-4f06-8556-0c9625d31b3b",
+        "chatSessionId": "sess_0a24c9c9-f7fd-4cf6-a502-9fd65b1c01c5",
+        "timestamp": 1789156785821
+      }
+    ],
+    "12.1 Wire up event listeners and bootstrap on DOMContentLoaded": [
+      {
+        "executionId": "340f0c51-50f3-4f06-8556-0c9625d31b3b",
+        "chatSessionId": "sess_0a24c9c9-f7fd-4cf6-a502-9fd65b1c01c5",
+        "timestamp": 1789156373112
+      },
+      {
+        "executionId": "340f0c51-50f3-4f06-8556-0c9625d31b3b",
+        "chatSessionId": "sess_0a24c9c9-f7fd-4cf6-a502-9fd65b1c01c5",
+        "timestamp": 1789156785584
+      }
+    ],
+    "13. Checkpoint — Full feature integration": [
+      {
+        "executionId": "980287f6-c71e-4682-a3de-9a23082c64e4",
+        "chatSessionId": "sess_55fe4e9e-d812-452e-b630-697d65ff93f9",
+        "timestamp": 1789156836249
+      },
+      {
+        "executionId": "980287f6-c71e-4682-a3de-9a23082c64e4",
+        "chatSessionId": "sess_55fe4e9e-d812-452e-b630-697d65ff93f9",
+        "timestamp": 1789156914464
+      }
+    ],
+    "14. Cross-browser and responsive verification": [
+      {
+        "executionId": "c86020de-83f4-49ca-a1e2-d03055408bb0",
+        "chatSessionId": "sess_7329447c-187c-4aea-8c6e-fcf0bca8c745",
+        "timestamp": 1789156960251
+      }
+    ]
+  }
+}
